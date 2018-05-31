@@ -1,0 +1,130 @@
+# Lezen van bestand met gene ids + converteren naar entrez ids.
+rule entrezID:
+	input:
+		"RNAseq.txt"
+	output:
+		"RNAseq_acc.txt",
+		"NCBI_tags.txt"
+	script:
+		"read_file.R"
+
+# lp IDs wegschrijven om later te gebruiken in verschillende API.
+rule lpID:
+	input:
+		"RNAseq.txt"
+	output:
+		"lpLink.txt"
+	script:
+		"getLp.R"
+
+# Haal de functie van een gen op uit de uniprot API.
+rule function:
+	input:
+		"NCBI_tags.txt"
+	output:
+		"Function.txt"
+	run:
+		with open(input[0]) as in_file:
+			ids = set()
+			for line in in_file:
+				ids.add('"GeneID+' + line.strip() + '"')
+			ids = "+OR+".join(ids)
+			shell("wget 'http://www.uniprot.org/uniprot/?query={ids}&format=tab&columns=id,comment(FUNCTION)' --output-document {output}")
+
+# Haal de sequentie van een gen op uit de uniprot API.
+rule sequentie:
+	input:
+		"NCBI_tags.txt"
+	output:
+		"sequences.fasta"
+	shell: "perl uniprot.pl {input} > {output}"
+
+# Haal de namen op van het gen (dmv rentrez library in python).
+rule names:
+	input:
+		"NCBI_tags.txt"
+	output:
+		"Names_IDs.txt"
+	script:
+		"names.py"
+
+# Haal de pmid ids op per gen vanuit NCBI API.
+rule pmids:
+	input:
+		"Names_IDs.txt"
+	output:
+		"pmids.txt"
+	run:
+		with open(input[0]) as in_file:
+			for line in in_file:
+				name = line.split(",")[1].replace(" ", "%20").replace("\n","")
+				geneid = line.split(",")[0]
+				list  = []
+				for pmid in shell("curl 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term={name}' | grep '<Id>'", iterable = True):
+					ids = pmid.replace("<Id>", "").replace("</Id>","")
+					list.append(ids)
+				new_line = str(geneid + ": ") + str(', '.join(list)) + "\n"
+				with open(output[0], "a") as out:
+					out.write(new_line)
+
+# Sorteer de genen op aantal pmid ids (artikel).
+rule sort:
+	input:
+		"pmids.txt"
+	output:
+		"sortedLijst.txt"
+	script:
+		"countArticles.py"
+
+# Zoeken welke locus tags samen voorkomen in een artikel.
+rule comb:
+	input:
+		"Names_IDs.txt"
+	output:
+		"combinations.txt"
+	script:
+		"combinationsGenes.R"
+
+# Haal alle Kegg informatie op per gen met de KEGG api.
+rule kegginf:
+	input:
+		"lpLink.txt"
+	output:
+		"kegg_info.txt"
+	run:
+		with open(input[0]) as in_file:
+			for line in in_file:
+				line = line
+		shell("wget 'http://rest.kegg.jp/get/{line}' --output-document {output}")
+
+# Haal de pathway(s) (in de vorm van KEGG id) op per gen met de KEGG api.
+rule pathway:
+	input:
+		"lpLink.txt"
+	output:
+		"pathways.txt"
+	run:
+		with open(input[0]) as in_file:
+			for line in in_file:
+				line = line
+		shell("wget 'http://rest.kegg.jp/link/pathway/{line}' --output-document {output}")
+
+# Haal de KO nummers uit de Kegg informatie. De lp's met dezelfde KO zijn orthologen van elkaar.
+rule ortho:
+	input:
+		"kegg_info.txt"
+	output:
+		"orthologen.txt"
+	script:
+		"orthologen.R"
+
+rule workflow:
+	input:
+		acc = "RNAseq_acc.txt",
+		NCBItags = "NCBI_tags.txt",
+		lp = "lpLink.txt"
+	output:
+		"all.vcf"
+	shell:
+		"samtools mpileup -g -f {input.acc} {input.NCBItags} {input.lp}"
+		"bcftools call -mv - > {output}"

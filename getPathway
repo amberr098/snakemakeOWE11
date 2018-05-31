@@ -1,0 +1,35 @@
+file <- readChar("kegg info.txt", file.info("kegg info.txt")$size)
+
+df_lp_Path <- data.frame()
+all_Path <- c()
+
+indexes <- strsplit(file, "///")
+for(i in indexes){
+  reg_Path <- regmatches(i, regexpr("PATHWAY.*MODULE",i))
+  Path <- gsub("\\r\\n","--", regmatches(reg_Path, regexpr("lpl.*\\n", reg_Path)))
+  all_Path <- c(all_Path, Path)
+  print(Path)
+  
+  reg_lp <- regmatches(i, regexpr("ENTRY.*CDS",i)) 
+  lp <- gsub(" ", "", regmatches(reg_lp, regexpr("lp_\\d.*?\\s",reg_lp)))
+  
+  df_lp_Path[i, 1] <- lp
+  df_lp_Path[i, 2] <- Path
+}
+
+# uniKO <- unique(KO)
+# 
+# orthologen_df <- data.frame()
+# for(KO in 1:length(uniKO)){
+#   orthologen <- ""
+#   for(id in 1:nrow(df_lp_KO)){
+#     if(df_lp_KO[id, 2] == uniKO[KO]){
+#       orthologen <- paste(orthologen, df_lp_KO[id, 1], sep = ",")#c(orthologen, df_lp_KO[id, 1])
+#     }
+#   }
+#   print(orthologen)
+#   orthologen_df[KO, 1] <- uniKO[KO]
+#   orthologen_df[KO, 2] <- orthologen
+# }
+# 
+# colnames(orthologen_df) <- c("KO", "lp")

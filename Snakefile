@@ -36,7 +36,7 @@ rule sequentie:
 	input:
 		"NCBI_tags.txt"
 	output:
-		"sequences.fasta"
+		"sequences.txt"
 	shell: "perl uniprot.pl {input} > {output}"
 
 # Haal de namen op van het gen (dmv rentrez library in python).
@@ -118,13 +118,22 @@ rule ortho:
 	script:
 		"orthologen.R"
 
+# Maken workflow
 rule workflow:
-	input:
-		acc = "RNAseq_acc.txt",
-		NCBItags = "NCBI_tags.txt",
-		lp = "lpLink.txt"
 	output:
-		"all.vcf"
+		"workflow.svg"
 	shell:
-		"samtools mpileup -g -f {input.acc} {input.NCBItags} {input.lp}"
-		"bcftools call -mv - > {output}"
+		"snakemake entrezID lpID function sequentie names pmids sort comb kegginf pathway ortho --dag | dot -Tsvg > {output}"
+
+rule report:
+	input:
+		Functie = "Function.txt",
+		Sequentie = "sequences.fasta",
+		Pubmed_ids = "sortedLijst.txt",
+		Orthologen = "orthologen.txt",
+		Pathways = "pathways.txt"
+	output:
+		"report.html"
+	run:
+		from snakemake.utils import report
+		report("""OWE 11: Workflows""", output[0], metadata="Author: Amber, Anne, Danique", **input)

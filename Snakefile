@@ -1,3 +1,7 @@
+rule all:
+	input:
+		"report.html"
+
 # Lezen van bestand met gene ids + converteren naar entrez ids.
 rule entrezID:
 	input:
@@ -128,12 +132,19 @@ rule workflow:
 rule report:
 	input:
 		Functie = "Function.txt",
-		Sequentie = "sequences.fasta",
+		Sequentie = "sequences.txt",
 		Pubmed_ids = "sortedLijst.txt",
 		Orthologen = "orthologen.txt",
-		Pathways = "pathways.txt"
+		Pathways = "pathways.txt",
+		Workflow = "workflow.svg"
 	output:
 		"report.html"
 	run:
 		from snakemake.utils import report
 		report("""OWE 11: Workflows""", output[0], metadata="Author: Amber, Anne, Danique", **input)
+
+rule clean:
+        shell:
+                """
+                rm report.html RNAseq_acc.txt NCBI_tags.txt lpLink.txt Function.txt sequences.txt Names_IDs.txt pmids.txt sortedLijst.txt kegg_info.txt pathways.txt orthologen.txt workflow.svg
+                """

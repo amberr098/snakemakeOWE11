@@ -1,19 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 22 11:25:51 2018
-
-@author: Danique
+Input: bestand met alle gen IDs onder elkaar.
+Het toevoegen van de namen van de gen ids.
+Output: gen id, naam gen id
 """
 NCBI_tags  = snakemake.input[0]
 
 from Bio import Entrez
 Entrez.email = "Your.Name.Here@example.org"
 
+# Openen van de input en het maken van een output file.
 file = open(NCBI_tags, "r")
 file_output = open("Names_IDs.txt", "w")
 
 ids = file.readlines()
 
+# Van elk gen ID de naam ophalen en wegschrijven naar de output file.
 for idd in ids:
     idd = idd.replace("\n", "")
     handle = Entrez.efetch(db="gene", id=idd, rettype="gb", retmode="text")

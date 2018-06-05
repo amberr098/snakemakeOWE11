@@ -1,3 +1,9 @@
+####################################
+# Input: Info van alle gen IDs uit KEGG. Alle informatie per ID is gescheiden door ///
+#  
+# Output: 
+####################################
+
 kegg <- snakemake@input[[1]]
 file <- readChar(kegg, file.info(kegg)$size)
 
@@ -6,6 +12,8 @@ all_KO <- c()
 
 indexes <- strsplit(file, "///")
 indexes <- indexes[[1]][1:(length(indexes[[1]])-1)]
+
+# Ophalen van de KO en lp
 for(i in indexes){
   reg_KO <- regmatches(i, regexpr("ORTHOLOGY.*ORGANISM",i))
   KO <- gsub(" ","", regmatches(reg_KO, regexpr("K\\d.*?\\s", reg_KO)))
@@ -24,7 +32,7 @@ for(i in indexes){
   }
 }
 
-
+# Alle unieke KOs pakken.
 uniKO <- unique(all_KO)
 
 orthologen_df <- data.frame()
@@ -32,7 +40,7 @@ for(KO in 1:length(uniKO)){
   orthologen <- ""
   for(id in 1:nrow(df_lp_KO)){
     if(df_lp_KO[id, 2] == uniKO[KO]){
-      orthologen <- paste(orthologen, df_lp_KO[id, 1], sep = ",")#c(orthologen, df_lp_KO[id, 1])
+      orthologen <- paste(orthologen, df_lp_KO[id, 1], sep = ",")
     }
   }
   orthologen_df[KO, 1] <- uniKO[KO]

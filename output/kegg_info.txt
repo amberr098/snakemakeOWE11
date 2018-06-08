@@ -1,0 +1,447 @@
+ENTRY       lp_0004           CDS       T00115
+DEFINITION  (RefSeq) hypothetical protein
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+POSITION    3210..3443
+MOTIF       Pfam: S4_2
+DBLINKS     NCBI-GeneID: 1061118
+            NCBI-ProteinID: YP_004888096
+            UniProt: F9US35
+AASEQ       77
+            MKQPIDIKTPYMTLGQLLKETAIIGSGGQAKWFLKETTVLVNGEPDDRRGRKLYPGDTIE
+            VEDNGSFFIRSNQETTD
+NTSEQ       234
+            gtgaaacagccaatagatattaaaaccccatatatgacgttggggcaactcttaaaagaa
+            acggccatcattggatcgggtggtcaggcgaagtggttcttaaaagaaacaaccgtgtta
+            gttaatggtgaaccagatgatcggcggggtcggaaactttatccaggcgatacgattgaa
+            gttgaagacaacgggtcattttttattcgctcaaatcaagaaacgactgattag
+///
+ENTRY       lp_0005           CDS       T00115
+NAME        recF
+DEFINITION  (RefSeq) DNA repair and genetic recombination protein RecF
+ORTHOLOGY   K03629  DNA replication and repair protein RecF
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl03440  Homologous recombination
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Genetic Information Processing
+              Replication and repair
+               03440 Homologous recombination
+                lp_0005 (recF)
+            DNA repair and recombination proteins [BR:lpl03400]
+             Prokaryotic Type
+              DSBR (double strand breaks repair)
+               HR (homologous recombination)
+                RecFOR pathway proteins
+                 lp_0005 (recF)
+POSITION    3444..4568
+MOTIF       Pfam: SMC_N AAA_23 AAA_15 AAA_21 DUF2813 AAA_27 AAA_29 PHM7_cyt
+DBLINKS     NCBI-GeneID: 1061119
+            NCBI-ProteinID: YP_004888097
+            UniProt: Q890K5
+AASEQ       374
+            MYLENLVLHDFRNYADLTINFSQGVNVLLGENAQGKTNLLEAIYVLALTRSHRTANDKEL
+            IRWQTTTATLQGRLHKSTGAVPLELELGRRGKRAKVNHLEQAKLSQYVGNLNVIVFAPED
+            LSIVKGAPAVRRRFMDMEFGQMSPKYLYNLSQYRTILKQRNQYLRQLNRQQAKDKVYLGV
+            LSDQLAAFGAEIIHKRLQLLQQLEKWAQAVHSEITQEQEQLTFHYVTQVPTADQTSVDHI
+            YQTLQALYQQQQAKEIFQGTTLLGPHRDDLQFGVNGKNVQTFGSQGQQRTTALSVKLAEI
+            DLMKAETGEYPVLLLDDVLSELDAARQTHLLTAIQDKVQTFLTTPSLDGVARKLINAPKV
+            FEVSHGTLHEEEPH
+NTSEQ       1125
+            atgtacttagaaaacttagtcttgcatgattttcggaactacgcggatttgaccattaat
+            tttagtcagggcgttaatgttctattaggtgaaaatgcgcagggaaagacgaacctgttg
+            gaagccatttatgtgttggcgttaacgcgtagtcaccgcaccgctaacgataaggaatta
+            attcggtggcaaaccaccacggcaacgttgcaaggccggttacataaaagtaccggtgct
+            gtccccttggaacttgaattggggcggcggggcaagcgagcgaaagtcaatcatcttgag
+            caagccaaattatcccagtacgtcggaaatttgaacgtgatcgtgtttgcacctgaagat
+            ttatccatcgttaaaggggcacccgcggttcgccgtcggtttatggatatggaatttggt
+            cagatgagccctaaatacctctataacctaagtcagtatcgcacgattttaaaacaacgt
+            aatcaatacttacggcaattaaatcggcagcaggccaaggataaggtttatttgggtgtc
+            ttgtcggatcaattggctgcatttggtgcggaaatcatccataaacgactacaactgttg
+            cagcaacttgagaaatgggcgcaagctgttcacagcgagattacgcaagaacaggaacaa
+            ttaacgtttcactatgtcactcaagtgccaactgccgaccagacgtcggtcgatcacatt
+            tatcaaacgctacaggccttatatcagcaacaacaagccaaagaaatttttcaagggacg
+            actttattaggtcctcatcgcgatgatttacaatttggtgttaacggcaaaaatgtgcag
+            acttttggctcccaaggccaacagcgtacaactgctttgtccgttaagcttgctgaaatt
+            gatctgatgaaagctgagacgggcgagtacccggtcttattattagacgatgtcttatca
+            gaattagacgctgcacggcagactcatctgctgacagcgatccaagataaagtgcagacc
+            tttttaaccacgccaagtcttgacggggtggcccgcaaattaattaatgcgccaaaagta
+            tttgaagttagccatggcactttacatgaggaggaaccgcattga
+///
+ENTRY       lp_0009           CDS       T00115
+NAME        rpsF
+DEFINITION  (RefSeq) 30S ribosomal protein S6
+ORTHOLOGY   K02990  small subunit ribosomal protein S6
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl03010  Ribosome
+MODULE      lpl_M00178  Ribosome, bacteria
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Genetic Information Processing
+              Translation
+               03010 Ribosome
+                lp_0009 (rpsF)
+            Ribosome [BR:lpl03011]
+             Ribosomal Proteins
+              Mitochondria/ Chloroplast
+               Small subunit
+                lp_0009 (rpsF)
+              Bacteria
+                lp_0009 (rpsF)
+            Mitochondrial biogenesis [BR:lpl03029]
+             Mitochondrial DNA transcription, translation, and replication factors
+              Mitochondrial transcription and translation factors
+               Other mitochondrial DNA transcription and translation factors
+                lp_0009 (rpsF)
+POSITION    9860..10159
+MOTIF       Pfam: Ribosomal_S6
+DBLINKS     NCBI-GeneID: 1061123
+            NCBI-ProteinID: YP_004888100
+            UniProt: Q890K2
+AASEQ       99
+            MSESKKYEITYIVRPDIDDAAKTALVDRFDKILTDNGAQVIDSKDWSKRRFAYEIGGFNE
+            GTYHIVNLTATDDAALNEFDRLSKINDDILRHMIVKRED
+NTSEQ       300
+            atgagtgaatcaaagaaatatgaaattacttacatcgtacgtcccgacatcgacgatgct
+            gccaagacagctttagttgatcgtttcgacaaaatcttaactgataacggtgcgcaagta
+            attgattcaaaagactggtcaaagcgtcgtttcgcatacgaaatcggtggctttaacgaa
+            ggtacttaccatatcgttaacttaacagcaactgacgatgctgctttaaacgaattcgac
+            cgtctttcaaagatcaatgatgacattttacgtcacatgatcgttaaacgcgaagactaa
+///
+ENTRY       lp_0010           CDS       T00115
+NAME        ssb
+DEFINITION  (RefSeq) single-strand DNA-binding protein
+ORTHOLOGY   K03111  single-strand DNA-binding protein
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl03030  DNA replication
+            lpl03430  Mismatch repair
+            lpl03440  Homologous recombination
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Genetic Information Processing
+              Replication and repair
+               03030 DNA replication
+                lp_0010 (ssb)
+               03430 Mismatch repair
+                lp_0010 (ssb)
+               03440 Homologous recombination
+                lp_0010 (ssb)
+            DNA replication proteins [BR:lpl03032]
+             Prokaryotic Type
+              DNA Replication Initiation Factors
+               Initiation factors (bacterial)
+                lp_0010 (ssb)
+            DNA repair and recombination proteins [BR:lpl03400]
+             Prokaryotic Type
+              SSBR (single strand breaks repair)
+               MMR (mismatch exicision repair)
+                Other MMR factors
+                 lp_0010 (ssb)
+              TLS (translesion DNA synthesis) factors
+               Other SOS response factors
+                lp_0010 (ssb)
+            Mitochondrial biogenesis [BR:lpl03029]
+             Mitochondrial DNA transcription, translation, and replication factors
+              Mitochondrial DNA replication factors
+               Other Mitochondrial DNA replication factors
+                lp_0010 (ssb)
+POSITION    10196..10798
+MOTIF       Pfam: SSB tRNA_anti-codon
+DBLINKS     NCBI-GeneID: 1061124
+            NCBI-ProteinID: YP_004888101
+            UniProt: Q890K1
+AASEQ       200
+            MINRTILVGRLTRDPELRYTNGGAAVATFTIAVNRQFTNQNGEREADFISCVIWRKAAEN
+            FANFTHKGSLVGIDGRIQTRNYENQQGVRVYVTEVVVENFSLLESRAESERHQAANGGSG
+            NNNYNNGNSNYNNNNNGYSNQGQNAAPQQSSANNNNPFGNGNTGNASSAAPSSSANNNNQ
+            ADPFANNGDQIDISDDDLPF
+NTSEQ       603
+            atgattaaccgtacaattcttgttggccgactgacaagagatccggaattacgttacacg
+            aatggtggtgccgccgtcgcgacgttcactattgccgtaaaccgtcaattcacgaatcaa
+            aatggggaacgtgaagcagatttcattagttgcgtcatttggcgtaaagctgctgaaaat
+            tttgcgaactttactcataaaggttcacttgttggtatcgatggccggattcaaacccgg
+            aactacgaaaaccaacaaggggtacgtgtttacgttacagaagttgtcgttgaaaacttc
+            tcattattagaatcacgggcagagtctgaacgtcatcaggctgccaatggtggtagtggt
+            aataacaattacaacaatggtaattcgaattacaacaacaataataatgggtatagtaat
+            caaggccaaaatgcggctcctcaacaatcatcagcgaataacaataacccatttggtaat
+            ggtaatactggtaatgctagcagtgcggcaccatcaagcagtgctaacaacaataatcag
+            gctgacccattcgctaataatggcgatcaaattgatatctcggatgatgatttaccattc
+            tag
+///
+ENTRY       lp_0011           CDS       T00115
+NAME        rpsR
+DEFINITION  (RefSeq) 30S ribosomal protein S18
+ORTHOLOGY   K02963  small subunit ribosomal protein S18
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl03010  Ribosome
+MODULE      lpl_M00178  Ribosome, bacteria
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Genetic Information Processing
+              Translation
+               03010 Ribosome
+                lp_0011 (rpsR)
+            Ribosome [BR:lpl03011]
+             Ribosomal Proteins
+              Mitochondria/ Chloroplast
+               Small subunit
+                lp_0011 (rpsR)
+              Bacteria
+                lp_0011 (rpsR)
+POSITION    10837..11073
+MOTIF       Pfam: Ribosomal_S18
+DBLINKS     NCBI-GeneID: 1061125
+            NCBI-ProteinID: YP_004888102
+            UniProt: Q890K0
+AASEQ       78
+            MAQQRRGGRRRRKVDFIAANHIEYIDYKDTDLLRRFISERGKILPRRVTGTSAKNQRSLT
+            IAIKRARIMGLLAFVSED
+NTSEQ       237
+            atggcacaacaaagaagaggtggccgtcgtcgtcgtaaagtcgacttcatcgccgcaaac
+            catatcgaatacatcgattataaagatactgacttattacgtcgctttatttcagaacgt
+            gggaagattttgccacgtcgtgtaacggggactagtgctaagaaccaacgttctttaact
+            atcgccatcaagcgtgcacggatcatgggcttattagcctttgtatctgaagactaa
+///
+ENTRY       lp_0012           CDS       T00115
+DEFINITION  (RefSeq) phosphoesterase, DHH family
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+POSITION    11254..13266
+MOTIF       Pfam: DHH DHHA1 PAS_9 GGDEF PAS_8 DUF5326
+DBLINKS     NCBI-GeneID: 1061126
+            NCBI-ProteinID: YP_004888103
+            UniProt: F9US42
+AASEQ       670
+            MKKIFSREKIPFFLQNQQLRLLALVIFSLSLIMLVTGYLMNWIFGTVVLILIVMAVVISY
+            NTLIELSSSANEYISDLSYRIKRGEQEALIQMPIGVMIFNSDQTIEWINPYLQRYFGDKD
+            VLGYRLEDIEPTLAATLNAHLDEPATIRWQDYQFDVRVQQSTNTVYMMDVTKYAELTDQF
+            EDEKLVIGQIFLDNYDEITQSMTDTDISNLNNYVTNELSKWTQMFGMYLKRLDDDHFFLL
+            GYASSLRRVEENKFRILDRIRESTSKQNFPLTLSIGIAYGERNMNNLADLAQSNMDLALG
+            RGGDQVVVKSEDEPARFYGGKTNPMEKRTRVRARMISQTLQELMNQSDQIFVQGHRQPDM
+            DAVGACLGIRRIAEMNGKQCWIVLDEQNVHSDIQRLLDQLKSDENIESAIISPEEALEKA
+            TDQSLLIMADHSKPSISMSQALYERLENRVMIIDHHRRGEEFPENPVLVYIEPYASSTCE
+            LITEMFEYQSHDAEPINKIEATAMLTGIVIDTKSFSLRSGSRTFDAASYLRSAGADSLLV
+            QQFMKENVDSYLQRNHLIETVEFVNQDMALCVGEDDQVYDPVTAAQAADSLLSMSGVDAS
+            FVITRREDGRVGISARSLGEINVQVYMEKLGGGGHLSNAATQIEGQSVEAVKQSLIDLLT
+            ATDEPTTESN
+NTSEQ       2013
+            atgaaaaagatcttttcgcgtgaaaaaattccatttttcctacaaaatcagcagttacga
+            ctcttagcgttggttatttttagcttgtcgttaattatgctcgtcactggttatttaatg
+            aactggatttttgggaccgttgtcctcatcttgattgtgatggctgtggtgatatcttat
+            aatacgttgattgagctcagttcgagtgcaaatgaatatatctcagacttgtcgtatcgt
+            attaagcgcggcgaacaagaggcactgattcagatgcctatcggagtaatgatttttaat
+            tccgaccagaccatcgaatggatcaatccttatcttcagcgctatttcggtgataaggac
+            gtcttaggataccgcttggaagatattgagccaacactggcagcgacgctgaacgctcat
+            ctggacgagcccgcgacgattcgttggcaagactaccagtttgatgtacgtgtccagcag
+            agcactaatacggtctatatgatggatgtgaccaagtatgctgagctgacggatcaattc
+            gaagatgaaaaactcgtgattggacaaatctttttggataattacgatgaaatcacccag
+            tcgatgactgatacggatatttccaacctgaacaattacgtgaccaatgaattgtctaag
+            tggacccagatgtttgggatgtacctgaagcgcttggatgatgatcacttcttcttgttg
+            ggctatgctagtagtttacgacgtgttgaagagaataagtttcgcattttagatcgaatt
+            cgggagtcgacttctaagcaaaatttcccactaacattgagtattgggattgcttatggt
+            gaacggaacatgaacaatttggccgatttagcgcagagtaacatggaccttgccttgggg
+            cggggtggtgaccaagttgtggtgaagtctgaggacgaacctgctcgtttctacggtggt
+            aaaaccaacccgatggaaaaacggacgcgggtacgggcccggatgatcagtcagacgtta
+            caagagttaatgaatcaatctgaccagatctttgttcaggggcaccgccaaccagatatg
+            gatgccgttggggcctgtctcgggattcgccgaattgctgaaatgaatggtaaacagtgt
+            tggatcgtcttggatgagcaaaatgtgcattcagacattcagcgtttactggaccagttg
+            aagtctgatgagaacatcgagtcagcgattatctcgccggaagaagcacttgagaaggcc
+            actgaccaaagtttattgattatggctgaccattctaagccaagtatttcaatgtcacag
+            gccctttatgagcggctcgaaaatcgcgttatgattattgatcaccatcgacggggcgaa
+            gaatttccagaaaacccagttttggtttatattgaaccgtatgcttcgtcgacttgtgag
+            ctgattaccgagatgtttgaatatcaatcgcacgatgccgaaccaatcaataagattgag
+            gcaaccgcaatgttgaccggaatcgttatcgatacgaagtcgttttcattacgatcagga
+            tcgcggacgtttgatgctgctagttatctacgatcagccggtgcggactcgttactcgtt
+            caacaatttatgaaggagaacgttgatagttatctacaacgcaatcatctgattgaaacc
+            gttgaatttgttaaccaggatatggcattatgtgttggtgaagatgatcaggtctatgac
+            ccagtaacggcggctcaagctgctgattcactattatctatgtctggtgtcgacgcatca
+            ttcgtgattacacgtcgtgaagatggacgggtcggaatttcggcacgatcacttggcgag
+            atcaacgtacaagtttatatggaaaaattgggtggtggcggtcatttatcgaatgctgca
+            acccagattgaagggcagtcagttgaagccgtcaaacaatcgttgattgatttgttaacg
+            gcaactgatgagccgaccacagaatctaattag
+///
+ENTRY       lp_0013           CDS       T00115
+NAME        rplI
+DEFINITION  (RefSeq) 50S ribosomal protein L9
+ORTHOLOGY   K02939  large subunit ribosomal protein L9
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl03010  Ribosome
+MODULE      lpl_M00178  Ribosome, bacteria
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Genetic Information Processing
+              Translation
+               03010 Ribosome
+                lp_0013 (rplI)
+            Ribosome [BR:lpl03011]
+             Ribosomal Proteins
+              Mitochondria/ Chloroplast
+               Large subunit
+                lp_0013 (rplI)
+              Bacteria
+                lp_0013 (rplI)
+POSITION    13279..13731
+MOTIF       Pfam: Ribosomal_L9_C Ribosomal_L9_N Peptidase_S26 TMEM191C
+DBLINKS     NCBI-GeneID: 1061127
+            NCBI-ProteinID: YP_004888104
+            UniProt: Q890J8
+AASEQ       150
+            MQVIFLNDVRGKGKRGQIKNVPDGYAQNFLIKKGLAKEATKAAINTLKAEQKSEAARAAE
+            ELAEAKQVKTVLEADETVVELKAKAGTDGRLFGSIPSKQIATALADQYQVKLDKRKIELP
+            EPIRVLGYTNVPVKLHPEVTAKIRVHVVEK
+NTSEQ       453
+            atgcaagttatttttttgaatgatgtccgtggtaagggcaagcggggccaaatcaagaat
+            gtcccggatggttacgcgcagaactttttaattaaaaagggattggccaaggaagccact
+            aaagcggcaatcaatacgttgaaggctgaacagaagtctgaagcagcacgtgccgctgag
+            gaattagccgaagctaagcaagtcaagacagttttggaagctgatgaaacggttgttgaa
+            ttgaaggccaaagctggtactgatggtcggttgtttgggtcaattcctagcaaacaaatt
+            gcaacggcgttagctgaccaataccaagttaagcttgataaacgcaagatcgaattacca
+            gaaccaattcgggtattaggttacacaaacgtgcccgttaagttacatccagaagtaacg
+            gcgaaaattcgcgtgcacgttgtcgaaaagtaa
+///
+ENTRY       lp_0014           CDS       T00115
+NAME        dnaC
+DEFINITION  (RefSeq) replicative DNA helicase DnaC
+ORTHOLOGY   K02314  replicative DNA helicase [EC:3.6.4.12]
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl03030  DNA replication
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Genetic Information Processing
+              Replication and repair
+               03030 DNA replication
+                lp_0014 (dnaC)
+            Enzymes [BR:lpl01000]
+             3. Hydrolases
+              3.6  Acting on acid anhydrides
+               3.6.4  Acting on acid anhydrides to facilitate cellular and subcellular movement
+                3.6.4.12  DNA helicase
+                 lp_0014 (dnaC)
+            DNA replication proteins [BR:lpl03032]
+             Prokaryotic Type
+              DNA Replication Initiation Factors
+               Initiation factors (bacterial)
+                lp_0014 (dnaC)
+POSITION    13747..15171
+MOTIF       Pfam: DnaB_C DnaB AAA_25 ATPase VBS AAA TACC ExsD
+DBLINKS     NCBI-GeneID: 1061128
+            NCBI-ProteinID: YP_004888105
+            UniProt: F9US44
+AASEQ       474
+            MNNDVLDQTPPQNIEAEKAVLGAIFLNSDALVEAMEFVEAQDFYRRAHQIIFASMVTLND
+            RDEAIDAVTVSDLLTAQNQLDDVGGMSYIAELAGSVPTAANAGYYAKIVAQKATVRRLIK
+            TATEITQKAYTENDDVTTLLDDAERDIMNVSEQRNQSGFKSISDVLNASIEEIDRLYQND
+            DDITGLPTGFAELDKMTAGLQPDNLIILAARPAVGKTAFVLNIAQNVATKTDTTVAIFSL
+            EMGAESLVNRMLCAEGSIDAGHLRTGQLNEEEWEHLVVAMGSLSKASIFIDDTPGIKMSE
+            IRAKSRRLAKEQGNLGLIVVDYLQLIEGSNTESRQQEVSEISRQMKKLAKELGVPVIALS
+            QLSRGVEQRQDKRPVLSDIRESGSIEQDADIVAFLYREDYYDREGGDDDDGGNFGGGGDF
+            NGGDPRDEDASEDVGEVEVIIEKNRAGARGTVKLLFVKPFNKFSSVSYAQDPQA
+NTSEQ       1425
+            atgaacaacgatgtgctggatcaaaccccaccacaaaatattgaagctgaaaaggcagtc
+            ttgggggctattttcttaaacagtgacgccctcgtggaagcgatggagtttgtcgaagcg
+            caagatttctatcggcgcgcacatcagatcatttttgccagcatggtgactttaaatgac
+            cgtgacgaggctattgatgcggtgaccgttagtgatttattaacggcccaaaatcaattg
+            gatgatgttggtgggatgagctacattgctgaattagctgggtccgtaccgactgcggct
+            aacgctggctactatgctaagattgtggcgcaaaaggcgacggtgcggcggttgatcaag
+            acggccacggagattacgcaaaaggcctatacggaaaatgatgacgtgaccacgttatta
+            gatgacgcggaacgcgacattatgaacgtgtctgaacagcgtaatcagagtgggtttaag
+            tcgatttcagatgtgttgaacgcgtcgattgaagaaattgaccgcttgtatcaaaatgat
+            gatgacattaccggtttaccgactggttttgcggagctggataaaatgaccgccggctta
+            caaccggataatctgattattttggctgcccggccagccgttggtaagacagcctttgtc
+            ctgaatattgcccaaaatgtggcgactaaaacggatacgacagtggccattttcagtttg
+            gaaatgggtgccgaatccttagtcaaccggatgctgtgtgcagaaggtagtattgacgct
+            gggcatttacggacggggcaactgaacgaagaagagtgggaacacttggtggttgccatg
+            gggagtttgtctaaagctagtatttttattgacgatacccccggaatcaagatgtcagaa
+            atccgggccaaaagtcgccgcttagcgaaagagcaaggtaacctcggcttgattgtggtc
+            gattatttgcaactgatcgaaggtagtaacacagaaagtcggcaacaggaagtttccgaa
+            atttcgcggcaaatgaagaaactggctaaggaactaggtgttccagtcattgccttatca
+            cagctatctcgtggtgttgaacagcgtcaagataagcggccagtgctttccgatattcgt
+            gaatcgggttcaattgaacaagatgctgacatcgttgccttcctataccgggaagattat
+            tatgatcgcgaaggcggcgacgatgatgatggcggtaattttggtggcggtggtgacttt
+            aatggcggcgatccgcgggacgaagatgcttctgaggatgttggtgaagttgaagtgatt
+            atcgaaaagaaccgtgctggggcgcggggaacggtcaaactattatttgtgaaaccattt
+            aataagttctcctcagtctcttatgcgcaggatccccaagcttaa
+///
+ENTRY       lp_0015           CDS       T00115
+DEFINITION  (RefSeq) transport protein, major facilitator superfamily (MFS)
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+POSITION    15393..16616
+MOTIF       Pfam: MFS_1 Lectin_N
+DBLINKS     NCBI-GeneID: 1061283
+            NCBI-ProteinID: YP_004888106
+            UniProt: F9US45
+AASEQ       407
+            MAQKQLIKTPWLIAGQFMNNIGMSFIWPLTTIYMHNVLGKSLTETGIVLMLNSVANVLAS
+            TIGGRIFDRGNPYHLLLMGITLNGLANFALIFFHGWPWYPMLLVVTGFASGWLNTMFNAL
+            AASVPRDKVRRTFTLMYLAANLGVVFGTMLVGIVYSMGMALLFSMTTSLFVIFLIIALFE
+            YNVDSSNVTGVDPRQGQDVHLPRANFHIVWTFFISLFIIWLLYEQWVSNLSVYMTNLGMP
+            LRNYSFLWTINAGLLVLIQSILSLLGNRIKNLYNQFFFGMLFVGLSFLSLVIAHDYPHFI
+            FAMILLTIGEATWSPAMPTLVSQLSPVSAKGRYQGLVQAFCALGRSLGPLFGGVIIDNWS
+            YKVLFLLAFVVLLIVLAVNIGVVHFNLRKAVNYMKTDVQTDVSRETK
+NTSEQ       1224
+            gtggcacaaaagcaactcattaaaacgccgtggctaattgccgggcagtttatgaataac
+            attggtatgagtttcatttggccgttaacgacgatctacatgcacaatgtgttaggtaag
+            tcgttgacggagactggaattgtcctgatgctcaattcagttgccaacgttttggcaagt
+            acgattggtgggcgtatatttgatcgaggtaatccttatcacctgttactgatgggaatc
+            acgttgaatggcctcgcgaactttgctctgatcttttttcatggatggccgtggtatccg
+            atgttgttagtcgtgaccgggtttgctagtggctggctaaatacgatgtttaatgctttg
+            gctgccagtgtcccccgcgataaagtgcggcgaacgtttacgttgatgtatctcgctgcc
+            aatctcggagttgtcttcggcacgatgctggttggtatcgtgtatagcatggggatggcc
+            ttgctattctcgatgaccacgagcctcttcgtgattttcttgattattgcattatttgaa
+            tacaatgtggattcgtcgaacgtgaccggggttgatccgcgccaaggacaagatgtgcac
+            ttgccacgggccaattttcacattgtctggaccttctttattagtttatttattatctgg
+            ttgctatacgaacagtgggtcagcaatttatccgtctacatgacgaatttggggatgccg
+            ctgcggaattacagttttctatggacaatcaacgcgggcttactggtccttattcagagt
+            attttaagtttgctggggaatcggattaaaaatttatataatcaatttttcttcggcatg
+            ctattcgtgggcttatcatttctatcacttgtgattgcgcatgattacccacactttatc
+            tttgccatgattttattgacgattggtgaagcaacttggtcaccagccatgccaacacta
+            gtgagtcagttatcaccagttagtgctaaggggcgttaccaaggactagtacaagccttt
+            tgtgcgttagggcgctcgctagggccgttatttggtggtgtgattatcgataattggtct
+            tataaggtgctgtttttgttggcatttgtggttttattgatcgtgttggcagttaatatc
+            ggtgtcgttcactttaatttacgcaaggccgttaattatatgaagacggacgttcagacc
+            gatgtttcacgtgaaacaaaataa
+///
+ENTRY       lp_0016           CDS       T00115
+NAME        proB
+DEFINITION  (RefSeq) glutamate 5-kinase
+ORTHOLOGY   K00931  glutamate 5-kinase [EC:2.7.2.11]
+ORGANISM    lpl  Lactobacillus plantarum WCFS1
+PATHWAY     lpl00330  Arginine and proline metabolism
+            lpl00332  Carbapenem biosynthesis
+            lpl01100  Metabolic pathways
+            lpl01130  Biosynthesis of antibiotics
+            lpl01230  Biosynthesis of amino acids
+MODULE      lpl_M00015  Proline biosynthesis, glutamate => proline
+BRITE       KEGG Orthology (KO) [BR:lpl00001]
+             Metabolism
+              Amino acid metabolism
+               00330 Arginine and proline metabolism
+                lp_0016 (proB)
+              Biosynthesis of other secondary metabolites
+               00332 Carbapenem biosynthesis
+                lp_0016 (proB)
+            Enzymes [BR:lpl01000]
+             2. Transferases
+              2.7  Transferring phosphorus-containing groups
+               2.7.2  Phosphotransferases with a carboxy group as acceptor
+                2.7.2.11  glutamate 5-kinase
+                 lp_0016 (proB)
+POSITION    16638..17435
+MOTIF       Pfam: AA_kinase
+DBLINKS     NCBI-GeneID: 1061284
+            NCBI-ProteinID: YP_004888107
+            UniProt: Q890J5
+AASEQ       265
+            MKVIRKLKAKRVVIKVGTSTLVYPDGSINLRAIDQLAFVISAMRHRGREVVLVSSGAIGV
+            GLNYMGLKQRPKAIPEQQAIAAIGQTELISIYKERFAIYEQKIGQLLLTRDIFVYPKSHH
+            NVLNTFEALLKQNVVPIVNENDTVAVDELDHETKFGDNDQLSAIVATNIGADLLIMLSDI
+            DGFYDGNPNADARAQLLGHIEKVDQHTYKLAGGSGSRFGTGGMVTKLKAAERMIDANGQM
+            ILANGADPTIIFQILAGEPVGTLFG
+NTSEQ       798
+            gtgaaagtgatacgaaaactaaaggctaaacgagtcgtgattaaagtcgggacaagcacg
+            ctagtttatccagatggatcgatcaacttacgggcaatcgatcaattagcctttgtcatt
+            agcgcaatgcgacaccgtgggcgtgaagttgtcttggtttcgtcaggggctattggtgtt
+            ggcttgaattatatgggactcaagcaacgtccaaaagcaattcctgaacaacaggcgatt
+            gcggcgattgggcaaactgaattgatttcgatttacaaagaacgtttcgccatttatgaa
+            caaaaaattggccagttgttattaacacgtgatatctttgtttatcctaagagtcaccat
+            aatgtgttgaatacatttgaggcgctattaaaacaaaacgtggtcccaattgttaatgaa
+            aatgatacggtcgcggtcgatgaattggatcatgaaacaaagttcggtgataacgatcaa
+            ctatccgcaatcgtggccacgaatatcggggcggatttgttaatcatgctatccgacatc
+            gatggcttttatgatggtaatcccaatgcggatgcccgagcccagttattagggcacatt
+            gagaaggttgatcaacatacttataagctagctggcggtagtggcagtcggtttggtact
+            ggtgggatggtcactaagctaaaagcggcagaacggatgatcgatgcgaatggtcaaatg
+            attttagccaatggtgcggatcccacaattatttttcaaattttagcaggcgaaccagtc
+            ggaacgctattcggttaa
+///

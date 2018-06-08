@@ -1,3 +1,4 @@
+# De Main van de snakemake. Wanneer je deze aanroept roep je alles aan (behalve de clean).
 rule all:
 	input:
 		"report.html"
@@ -129,6 +130,7 @@ rule workflow:
 	shell:
 		"snakemake entrezID lpID function sequentie names pmids sort comb kegginf pathway ortho --dag | dot -Tsvg > {output}"
 
+# Rapport maken de genen
 rule report:
 	input:
 		Functie = "Function.txt",
@@ -141,8 +143,9 @@ rule report:
 		"report.html"
 	run:
 		from snakemake.utils import report
-		report("""OWE 11: Workflows""", output[0], metadata="Author: Amber, Anne, Danique", **input)
+		report("""OWE 11: Workflows \n\n\n\n In dit report staan de belangrijkste output files.\n\n In Functie staan de functies opgehaald uit uniprot per gen. \n\n In Sequentie staan de sequenties per gen opgehaald uit uniprot.  \n\n In Pubmed_ids staan de pubmed_ids (artikel nummers) per gen aangegeven gesorteerd van weinig naar veel pubmedids, opgehaald via NCBI. \n\n In orthologen staan de KO nummers met daarachter de genen (lp nummers) die dat KO nummer bevatten. \n\n In pathways staan de pathway nummers per gen aangegeven. \n\n In workflow staat met een afbeelding onze workflow afgebeeld.""", output[0], metadata="Author: Amber, Anne, Danique", **input)
 
+# Alle aangemaakte bestanden verwijderen.
 rule clean:
         shell:
                 """

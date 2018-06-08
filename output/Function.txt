@@ -1,0 +1,12 @@
+Entry	Function [CC]
+Q890J8	FUNCTION: Binds to the 23S rRNA. {ECO:0000255|HAMAP-Rule:MF_00503}.
+Q890K2	FUNCTION: Binds together with S18 to 16S ribosomal RNA. {ECO:0000255|HAMAP-Rule:MF_00360}.
+Q890K0	FUNCTION: Binds as a heterodimer with protein S6 to the central domain of the 16S rRNA, where it helps stabilize the platform of the 30S subunit. {ECO:0000255|HAMAP-Rule:MF_00270}.
+Q890K5	FUNCTION: The RecF protein is involved in DNA metabolism; it is required for DNA replication and normal SOS inducibility. RecF binds preferentially to single-stranded, linear DNA. It also seems to bind ATP. {ECO:0000255|HAMAP-Rule:MF_00365}.
+Q890K1	FUNCTION: Plays an important role in DNA replication, recombination and repair. Binds to ssDNA and to an array of partner proteins to recruit them to their sites of action during DNA metabolism. {ECO:0000255|HAMAP-Rule:MF_00984}.
+Q890J5	FUNCTION: Catalyzes the transfer of a phosphate group to glutamate to form L-glutamate 5-phosphate. {ECO:0000255|HAMAP-Rule:MF_00456}.
+Q890K8	FUNCTION: Plays an important role in the initiation and regulation of chromosomal replication. Binds to the origin of replication; it binds specifically double-stranded DNA at a 9 bp consensus (dnaA box): 5'-TTATC[CA]A[CA]A-3'. DnaA binds to ATP and to acidic phospholipids. {ECO:0000255|HAMAP-Rule:MF_00377}.
+F9US42	
+F9US35	
+F9US44	FUNCTION: Participates in initiation and elongation during chromosome replication; it exhibits DNA-dependent ATPase activity. {ECO:0000256|RuleBase:RU362085}.
+F9US45	

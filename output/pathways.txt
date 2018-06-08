@@ -1,0 +1,13 @@
+lpl:lp_0005	path:lpl03440
+lpl:lp_0009	path:lpl03010
+lpl:lp_0010	path:lpl03030
+lpl:lp_0010	path:lpl03430
+lpl:lp_0010	path:lpl03440
+lpl:lp_0011	path:lpl03010
+lpl:lp_0013	path:lpl03010
+lpl:lp_0014	path:lpl03030
+lpl:lp_0016	path:lpl00330
+lpl:lp_0016	path:lpl00332
+lpl:lp_0016	path:lpl01100
+lpl:lp_0016	path:lpl01130
+lpl:lp_0016	path:lpl01230
